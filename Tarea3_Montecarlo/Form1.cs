@@ -31,7 +31,7 @@ namespace Tarea3_Montecarlo
                 double result = Montecarlo(experimentos, cantidad, a, b);
                 resultLabel.Text = $"Promedio Monte Carlo: {result:F2}";
 
-                // Display iterations in DataGridView
+                // Iteraciones en el datagridview
                 dataGridView1.Rows.Clear();
                 dataGridView1.Columns.Clear();
                 dataGridView1.Columns.Add("Iteration", "Iteración");
@@ -69,13 +69,13 @@ namespace Tarea3_Montecarlo
 
             double mean = sum / (experimentos * cantidad);
 
-            // Calculate variance
+            // Varianza
             double variance = values.Select(val => Math.Pow(val - mean, 2)).Sum() / (experimentos * cantidad);
 
-            // Standard deviation is the square root of variance
+            // Desviacion estandar
             double stdDev = Math.Sqrt(variance);
 
-            // Display standard deviation
+            // Muestra desviacion estandar
             stdDevLabel.Text = $"Desviación estándar: {stdDev:F2}";
 
             return mean;
