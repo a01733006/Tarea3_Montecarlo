@@ -40,6 +40,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.resultLabel = new System.Windows.Forms.Label();
             this.stdDevLabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,11 +146,21 @@
             this.stdDevLabel.TabIndex = 11;
             this.stdDevLabel.Text = "Desviación estándar:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 13);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(380, 16);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Equipo: Andrés Orantes, Rodrigo González y Pedro Fernández";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.stdDevLabel);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.dataGridView1);
@@ -184,6 +195,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label resultLabel;
         private System.Windows.Forms.Label stdDevLabel;
+        private System.Windows.Forms.Label label5;
     }
 }
 
